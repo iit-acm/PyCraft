@@ -19,6 +19,10 @@ This program requires:
 * ZODB 3 <http://pypi.python.org/pypi/ZODB3>
 * Chameleon <https://github.com/malthe/chameleon>
 
-The dependencies can also be downloaded using paster:::
+The dependencies can also be downloaded using setup.py:::
 
-  $
+  $ python setup.py install
+
+or if developing:::
+
+  $ python setup.py develop
