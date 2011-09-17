@@ -1,4 +1,7 @@
 *.pyc
+build/
+dist/
+PyCraft.egg-info
 
 # vim swap files
 .*.swp
