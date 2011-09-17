@@ -14,10 +14,13 @@ Features
 ========
 Completed
 ---------
+Currently completed features:
+
+* None yet :(
 
 Planned
 -------
-Planned features include, but are not limited to
+Planned features include, but are not limited to:
 
 * Multiserver support
 * Per server start, stop, restart functionality
