@@ -1,6 +1,6 @@
 from pyramid.view import view_config
-from pycraft.models import MyModel
+from pycraft.models import PyCraft
 
-@view_config(context=MyModel, renderer='pycraft:templates/mytemplate.pt')
+@view_config(context=PyCraft, renderer='pycraft:templates/mytemplate.pt')
 def my_view(request):
     return {'project':'PyCraft'}
