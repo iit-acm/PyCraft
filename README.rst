@@ -10,6 +10,26 @@ A web application for managing a Minecraft server
 This program starts, monitors, and manages a Minecraft
 server and provides a web interface.
 
+Features
+========
+Completed
+---------
+
+Planned
+-------
+Planned features include, but are not limited to
+
+* Multiserver support
+* Per server start, stop, restart functionality
+* Server console access
+* Command (ie save-on, save-off etc) scheduling
+* Backup scheduling
+* Incremental backups
+* Log parsing
+* Server settings editor
+* Resource utilization viewer
+* Multiuser authorization and acl
+
 Requirements
 ============
 This program requires:
@@ -19,10 +39,5 @@ This program requires:
 * ZODB 3 <http://pypi.python.org/pypi/ZODB3>
 * Chameleon <https://github.com/malthe/chameleon>
 
-The dependencies can also be downloaded using setup.py:::
+The dependencies can also be downloaded using setup.py develop or install
 
-  $ python setup.py install
-
-or if developing:::
-
-  $ python setup.py develop
