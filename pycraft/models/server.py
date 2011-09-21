@@ -62,8 +62,12 @@ class Server(Persistent):
   def start(self):
     if self.acquire_lock():
       try:
-        self._v_proc = Popen(self.cmd_args, stdin=PIPE, stdout=PIPE, stderr=PIPE, cwd=self.path)
-        #wait for server to start
+        if not self.proc() && not self.world_locked():
+          self._v_proc = Popen(self.cmd_args, stdin=PIPE, stdout=PIPE, stderr=PIPE, cwd=self.path)
+          #wait for server to start
+          #start a timer tick function that consumes PIPEs (very bad if not done)
+        else:
+          pass #return error
       finally:
         self.release_lock()
 
@@ -103,6 +107,15 @@ class Server(Persistent):
   def backup(self):
     if self.lock().acquire():
       try:
+        pass
+      finally:
+        self.lock().release()
+
+  def tick(self):
+    if self.lock().acquire():
+      try:
+        #consume process pipes, check for errors
+        #use pipe data to fill userlist and log actions
         pass
       finally:
         self.lock().release()
