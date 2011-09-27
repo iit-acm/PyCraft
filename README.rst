@@ -23,15 +23,16 @@ Planned
 Planned features include, but are not limited to:
 
 * Multiserver support
+* ramdisk support
 * Per server start, stop, restart functionality
 * Server console access
+* Server log parsing
+* Server setting parsing and editor
+* Incremental server backups
 * Command (ie save-on, save-off etc) scheduling
 * Backup scheduling
-* Incremental backups
-* Log parsing
-* Server settings editor
-* Resource utilization viewer
 * Multiuser authorization and acl
+* Resource utilization view (visual and text)
 
 Requirements
 ============
